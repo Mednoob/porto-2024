@@ -10,7 +10,7 @@ export default {
         "screen-no-scroll": "calc(100vw - (100vw - 100%))"
       },
       animation: {
-        "bounce-up": "bounce-up 1.5s infinite alternate ease-in-out"
+        "float": "float 1.5s infinite alternate ease-in-out"
       }
     },
   },

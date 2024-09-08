@@ -2,11 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes bounce-up {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10px);
-  }
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+@keyframes drag-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes drag-down {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.project-preview {
+  width: 0px;
+  height: auto;
+  transition-duration: 200ms;
+}
+
+.project-card:hover .project-preview {
+  width: 100%;
 }
